@@ -13,6 +13,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'mini_racer'
 gem 'bootstrap'
+gem 'simple_form'
 
 
 # Reduces boot times through caching; required in config/boot.rb
