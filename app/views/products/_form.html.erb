@@ -1,5 +1,5 @@
 
-<%= simple_form_for(@list) do |f| %>
+<%= simple_form_for([ List.find(params[:list_id]), @product]) do |f| %>
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
@@ -7,8 +7,14 @@
     <%= f.input :name %>
   </div>
 
+   <div class="form-inputs">
+    <%= f.input :bought, as: :radio_buttons%>
+  </div>
+
+
+
   <div class="form-actions">
-    <%= link_to 'Back', lists_path, class: 'btn btn-outline-secondary', role: :button %>
+    <%= link_to 'Back', list_products_path, class: 'btn btn-outline-secondary', role: :button %>
     <%= f.button :submit, class: 'btn btn-primary' %>
   </div>
 <% end %>
