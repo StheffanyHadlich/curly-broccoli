@@ -1,24 +1,35 @@
-# README
+# Curly brocolli
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+It is a rails app to make lists
 
-Things you may want to cover:
+## Instalation
 
-* Ruby version
+First clone this repository
 
-* System dependencies
+```
+ $ git clone https://github.com/StheffanyHadlich/curly-broccoli.git
 
-* Configuration
+ $ cd curly-broccoli
 
-* Database creation
+```
 
-* Database initialization
+Then install the dependencies and run the migrations
 
-* How to run the test suite
+```
+$ bundle install
 
-* Services (job queues, cache servers, search engines, etc.)
+$ rails db:migrate
+```
 
-* Deployment instructions
+and now you can run the application with
 
-* ...
+```
+$ rails s
+```
+
+it should be running on ```localhost:3000```
+
+____________________________
+
+
+
